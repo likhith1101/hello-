@@ -1,7 +1,6 @@
-//#include <LiquidCrystal.h>
+
 #include <stdio.h>
 
-//LiquidCrystal lcd(6, 7, 5, 4, 3, 2);
  
  unsigned char rcv,count,gchr,gchr1,robos='s';
  //char pastnumber[11]="";
@@ -141,10 +140,7 @@ void setup()
   //serialEvent();
   
    
-   // set up the LCD's number of columns and rows:
-  //lcd.begin(16, 2);
-  // Print a message to the LCD.
-  //lcd.print("Self Allignment-Smooth");
+
 
   Serial.write("AT\r\n");         delay(3000);//okcheck();
   Serial.write("ATE0\r\n");         okcheck();
